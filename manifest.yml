@@ -1,0 +1,11 @@
+package: myhouse-interaction-slack
+revision: 1
+version: development
+git: myhouse-project/myhouse-interaction-slack
+modules:
+  - interaction/slack
+default_config:
+  - interaction/slack:
+      bot_name: "housebot"
+      bot_token: 
+      channel: "channel"
