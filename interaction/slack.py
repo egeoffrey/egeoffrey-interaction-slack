@@ -16,10 +16,10 @@ import time
 import base64
 from slackclient import SlackClient
 
-from sdk.module.interaction import Interaction
-from sdk.module.helpers.message import Message
+from sdk.python.module.interaction import Interaction
+from sdk.python.module.helpers.message import Message
 
-import sdk.utils.exceptions as exception
+import sdk.python.utils.exceptions as exception
 
 # send a notification through slack
 class Slack(Interaction):
