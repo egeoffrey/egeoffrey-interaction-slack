@@ -2,7 +2,7 @@ package: myhouse-interaction-slack
 revision: 3
 version: development
 github: myhouse-project/myhouse-interaction-slack
-dockerhub: myhouse-project/myhouse-interaction-slack
+dockerhub: myhouseproject/myhouse-interaction-slack
 description: Connect to a slack channel as a bot and interact with the user
 tags: interaction slack
 modules:
