@@ -37,7 +37,8 @@ class Slack(Interaction):
         # module's configuration
         self.config = {}
         # request required configuration files
-        self.add_configuration_listener(self.fullname, True)
+        self.config_schema = 1
+        self.add_configuration_listener(self.fullname, "+", True)
 
     # return the ID corresponding to the bot name
     def get_user_id(self, username):
@@ -196,6 +197,8 @@ class Slack(Interaction):
      # What to do when receiving a new/updated configuration for this module    
     def on_configuration(self, message):
         # module's configuration
-        if message.args == self.fullname:
-            if not self.is_valid_module_configuration(["bot_token", "bot_name", "channel"], message.get_data()): return False
+        if message.args == self.fullname and not message.is_null:
+            if message.config_schema != self.config_schema: 
+                return False
+            if not self.is_valid_configuration(["bot_token", "bot_name", "channel"], message.get_data()): return False
             self.config = message.get_data()
