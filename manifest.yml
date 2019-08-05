@@ -2,11 +2,12 @@ branch: development
 description: Connect to a slack channel as a bot and interact with the user
 dockerhub: myhouseproject/myhouse-interaction-slack
 github: myhouse-project/myhouse-interaction-slack
+icon: hashtag
 manifest_schema: 2
 modules:
 - interaction/slack:
     description: Connect to a slack channel as a bot and interact with the user
 package: myhouse-interaction-slack
-revision: 5
+revision: 6
 tags: interaction slack
 version: 1.0
