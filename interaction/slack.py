@@ -27,7 +27,7 @@ class Slack(Interaction):
     def on_init(self):
         # constants
         self.sleep_on_error = 60
-        self.tmp_file = "/tmp/myHouse_slack_image.jpg"
+        self.tmp_file = "/tmp/eGeoffrey_slack_image.jpg"
         # variables
         self.slack = None
         self.slack_initialized = False
