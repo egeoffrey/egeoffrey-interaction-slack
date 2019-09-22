@@ -60,4 +60,4 @@ interaction slack
 
 ## Version
 
-The version of this egeoffrey-interaction-slack is 1.0-9 on the development branch.
+The version of this egeoffrey-interaction-slack is 1.0-10 on the master branch.
